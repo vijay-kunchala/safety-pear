@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Safety Pear · Small device. Big protection.</title>
+  <meta name="description" content="Safety Pear is an affordable SOS keychain with a 130 dB siren and a companion app that shares your live location with the people you trust.">
+  <meta name="theme-color" content="#2b1d4a">
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Nunito+Sans:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav" data-nav>
+    <div class="container nav-inner">
+      <a class="brand" href="#top" aria-label="Safety Pear home">
+        <img src="assets/logo.svg" alt="" width="34" height="34"> Safety Pear
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" data-nav-toggle>
+        <span class="sr-only">Menu</span><span></span><span></span><span></span>
+      </button>
+      <nav id="nav-links" class="nav-links" aria-label="Main">
+        <a href="#demo">Try it</a>
+        <a href="#how">How it works</a>
+        <a href="#device">Device</a>
+        <a href="#app">App</a>
+        <a href="#plans">Plans</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn btn-small" href="#launch">Coming soon</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Personal safety · Made for India</p>
+          <h1>Small device.<br><span class="accent">Big protection.</span></h1>
+          <p class="lead">Safety Pear is a keychain alarm with a 130 dB siren. Hold one button and the app sends your live location to the people you trust.</p>
+          <div class="hero-actions">
+            <a class="btn" href="#demo">Try the live demo</a>
+            <a class="btn btn-ghost" href="#launch">Coming soon</a>
+          </div>
+          <ul class="hero-points">
+            <li>130 dB siren</li>
+            <li>Live location</li>
+            <li>Free app</li>
+          </ul>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="blob"></div>
+          <img class="hero-phone" src="assets/screen-home.png" alt="" width="390" height="820">
+          <svg class="hero-keychain" viewBox="0 0 200 300" width="190" height="285">
+            <use href="#keychain"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- Problem -->
+    <section class="section">
+      <div class="container">
+        <p class="eyebrow center">Why Safety Pear</p>
+        <h2 class="center">In an emergency, there’s no time to unlock a phone.</h2>
+        <div class="cards three reveal">
+          <article class="card">
+            <span class="card-icon">⏱</span>
+            <h3>Phones are slow</h3>
+            <p>Unlocking, finding an app and typing a message takes time you don’t have.</p>
+          </article>
+          <article class="card">
+            <span class="card-icon">📢</span>
+            <h3>A siren alone isn’t enough</h3>
+            <p>It can scare an attacker off, but it doesn’t tell anyone where you are.</p>
+          </article>
+          <article class="card">
+            <span class="card-icon">📍</span>
+            <h3>Help needs your location</h3>
+            <p>Family and responders need to know exactly where you are, as you move.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive demo -->
+    <section class="section demo-section" id="demo">
+      <div class="container">
+        <p class="eyebrow center light">Try it yourself</p>
+        <h2 class="center light">Press and hold the button</h2>
+        <p class="center sub light">This is a simulation. Nothing is sent to anyone.</p>
+
+        <div class="demo">
+          <!-- Device -->
+          <div class="demo-panel demo-device">
+            <div class="device-stage" data-device>
+              <svg class="device-svg" viewBox="0 0 200 240" width="200" height="240" aria-hidden="true">
+                <g class="beacon"><circle cx="100" cy="170" r="60"/><circle cx="100" cy="170" r="60"/><circle cx="100" cy="170" r="60"/></g>
+                <g class="waves">
+                  <path d="M22 140 q-14 30 0 60"/><path d="M8 128 q-22 42 0 84"/>
+                  <path d="M178 140 q14 30 0 60"/><path d="M192 128 q22 42 0 84"/>
+                </g>
+                <use href="#keychain"/>
+                <circle class="led" cx="100" cy="112" r="6"/>
+              </svg>
+              <button class="device-button" data-hold aria-label="Safety Pear button: press and hold for 2 seconds">
+                <svg viewBox="0 0 80 80" aria-hidden="true"><circle class="hold-ring" cx="40" cy="40" r="36"/></svg>
+                <span>Hold</span>
+              </button>
+            </div>
+            <p class="device-hint" data-device-hint>Hold the button for 2 seconds</p>
+            <div class="demo-controls">
+              <button class="chip" data-fall>📉 Simulate a fall</button>
+              <button class="chip" data-voice>🎙 Say “Help me, Pear”</button>
+              <label class="toggle">
+                <input type="checkbox" data-phone-nearby checked>
+                <span class="toggle-track"></span> Phone nearby
+              </label>
+              <label class="toggle">
+                <input type="checkbox" data-sound>
+                <span class="toggle-track"></span> Siren sound
+              </label>
+            </div>
+          </div>
+
+          <!-- Phone -->
+          <div class="demo-panel demo-phone-wrap">
+            <div class="mock-phone">
+              <div class="mock-status"><span>9:41</span><span>●●● ▮</span></div>
+              <div class="mock-screen" data-screen aria-live="polite"></div>
+            </div>
+          </div>
+
+          <!-- What's happening -->
+          <div class="demo-panel demo-log">
+            <h3>What’s happening</h3>
+            <ol class="timeline" data-timeline aria-live="polite"></ol>
+            <div class="contact-view" data-contact-view hidden>
+              <p class="cv-label">What Mom receives</p>
+              <div class="sms" data-sms></div>
+            </div>
+            <button class="btn btn-small btn-light" data-reset>Reset demo</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="section" id="how">
+      <div class="container">
+        <p class="eyebrow center">How it works</p>
+        <h2 class="center">From one press to help on the way</h2>
+        <ol class="steps reveal">
+          <li><span class="step-num">1</span><h3>Trigger</h3><p>Hold the button for 2 seconds, say your phrase, or let it detect a fall or snatch.</p></li>
+          <li><span class="step-num">2</span><h3>10-second countdown</h3><p>The siren sounds and the app pops up. Your password cancels a false alarm.</p></li>
+          <li><span class="step-num">3</span><h3>SOS sent</h3><p>Your contacts and the control room get your live location every 15 seconds.</p></li>
+          <li><span class="step-num">4</span><h3>You’re safe</h3><p>Enter your password and everyone gets an “I’m safe now” message.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Device -->
+    <section class="section tint" id="device">
+      <div class="container">
+        <p class="eyebrow center">The device</p>
+        <h2 class="center">A keychain that calls for help</h2>
+        <div class="cards three reveal">
+          <article class="card"><span class="card-icon">🔊</span><h3>130 dB siren</h3><p>Loud enough to scare off an attacker and draw attention.</p></article>
+          <article class="card"><span class="card-icon">✋</span><h3>Hold to trigger</h3><p>Hold for 2 seconds, so a press in your pocket won’t set it off.</p></article>
+          <article class="card"><span class="card-icon">🤸</span><h3>Fall &amp; snatch alerts</h3><p>A motion sensor raises the alarm automatically.</p></article>
+          <article class="card"><span class="card-icon">📶</span><h3>Bluetooth to the app</h3><p>Your phone adds your location and sends the alerts.</p></article>
+          <article class="card"><span class="card-icon">📳</span><h3>Silent confirmation</h3><p>A short vibration tells you help was called.</p></article>
+          <article class="card"><span class="card-icon">🔑</span><h3>Keychain size</h3><p>Small, light and rechargeable. Water resistance planned.</p></article>
+        </div>
+
+        <div class="loudness reveal">
+          <div class="loudness-copy">
+            <h3>How loud is 130 dB?</h3>
+            <p>Drag the slider to compare everyday sounds with the Safety Pear siren.</p>
+            <label class="sr-only" for="db">Sound level in decibels</label>
+            <input id="db" type="range" min="30" max="130" step="1" value="130" data-db>
+            <p class="db-readout"><b data-db-value>130 dB</b> <span data-db-label>Safety Pear siren</span></p>
+          </div>
+          <div class="meter" aria-hidden="true"><div class="meter-fill" data-db-fill></div></div>
+          <p class="note">Typical levels measured close to the source. Each +10 dB sounds roughly twice as loud.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- App -->
+    <section class="section" id="app">
+      <div class="container app-grid">
+        <div>
+          <p class="eyebrow">The app</p>
+          <h2>Clean, simple and always ready</h2>
+          <div class="tabs" role="tablist" aria-label="App screens">
+            <button role="tab" aria-selected="true" data-tab="home">Home</button>
+            <button role="tab" aria-selected="false" data-tab="countdown">SOS countdown</button>
+            <button role="tab" aria-selected="false" data-tab="sos">SOS sent</button>
+            <button role="tab" aria-selected="false" data-tab="map">Live map</button>
+          </div>
+          <p class="tab-text" data-tab-text aria-live="polite"></p>
+          <ul class="ticks">
+            <li>Sign up with mobile <b>and</b> email, both verified</li>
+            <li>Up to 5 emergency contacts</li>
+            <li>Night tracking records your route while you’re out</li>
+            <li>Voice SOS: say your phrase twice to raise the alarm</li>
+            <li>One tap to call the control room</li>
+          </ul>
+        </div>
+        <div class="app-shot">
+          <img data-tab-img src="assets/screen-home.png" alt="Safety Pear home screen" width="390" height="820">
+        </div>
+      </div>
+    </section>
+
+    <!-- Safety -->
+    <section class="section dark">
+      <div class="container">
+        <p class="eyebrow center light">Built for real danger</p>
+        <h2 class="center light">Smart rules that protect you</h2>
+        <div class="cards three reveal">
+          <article class="card dark-card"><h3>Only the app cancels</h3><p>An attacker can’t silence the keychain itself.</p></article>
+          <article class="card dark-card"><h3>Emergency password</h3><p>Looks like a normal cancel, but quietly keeps your SOS going.</p></article>
+          <article class="card dark-card"><h3>3 wrong tries</h3><p>Guessing your password sends the SOS straight away.</p></article>
+          <article class="card dark-card"><h3>No phone nearby</h3><p>The keychain sends an SOS beacon, and alerts go out once your phone is back.</p></article>
+          <article class="card dark-card"><h3>Fair misuse policy</h3><p>Cancelled alarms never count. Only repeated confirmed false alarms limit control room alerts.</p></article>
+          <article class="card dark-card"><h3>Private by design</h3><p>Your location is shared only during an alert or night tracking you turn on.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Who it's for -->
+    <section class="section">
+      <div class="container center">
+        <p class="eyebrow center">Who it’s for</p>
+        <h2 class="center">Women first. Useful for everyone.</h2>
+        <ul class="audience reveal">
+          <li>Women travelling alone</li>
+          <li>College students</li>
+          <li>Night-shift workers</li>
+          <li>Elderly parents</li>
+          <li>Delivery and field staff</li>
+          <li>Kids walking home</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Plans -->
+    <section class="section tint" id="plans">
+      <div class="container">
+        <p class="eyebrow center">Plans</p>
+        <h2 class="center">Affordable by design</h2>
+        <div class="plan-switch" role="radiogroup" aria-label="Choose a model">
+          <button role="radio" aria-checked="true" data-plan="basic">Basic</button>
+          <button role="radio" aria-checked="false" data-plan="plus">Plus</button>
+        </div>
+        <div class="plan reveal" data-plan-card aria-live="polite"></div>
+        <p class="note center">Planned price ranges. Final prices are announced at launch.</p>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="container narrow">
+        <p class="eyebrow center">FAQ</p>
+        <h2 class="center">Questions, answered</h2>
+        <div class="faq">
+          <details><summary>Do I need a subscription?</summary><p>No. The Basic model and the app are free to use. Only the planned Plus model, which has its own 4G connection, needs a small monthly data plan.</p></details>
+          <details><summary>Does it work without my phone?</summary><p>The siren always works. The Basic model also broadcasts an SOS beacon, and your alert goes out as soon as your phone is back in range. The Plus model will send alerts by itself.</p></details>
+          <details><summary>What if I press it by accident?</summary><p>You get 10 seconds to cancel with your password. Cancelled alarms are never sent and never count against you.</p></details>
+          <details><summary>What if someone forces me to cancel?</summary><p>Enter your emergency password instead. The app looks cancelled, but your SOS keeps going silently.</p></details>
+          <details><summary>Who is the control room?</summary><p>A 24/7 team that watches your live location during an alert. Details are being finalised before launch.</p></details>
+          <details><summary>Which phones are supported?</summary><p>The app is planned for both Android and iPhone.</p></details>
+          <details><summary>Is my location private?</summary><p>Your location is shared only during an alert, or while night tracking is on, and only with your chosen contacts and the control room.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Coming soon -->
+    <section class="section dark" id="launch">
+      <div class="container narrow center">
+        <p class="launch-icon" aria-hidden="true">🍐</p>
+        <p class="eyebrow center light">Coming soon</p>
+        <h2 class="center light">Safety Pear is on its way</h2>
+        <p class="center sub light">We’re turning our tested prototype into a real product. Launch details will be shared here soon.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="brand"><img src="assets/logo.svg" alt="" width="28" height="28"> Safety Pear</p>
+      <p>A project by <b>Sai Pratap Arigela</b> &amp; <b>Vijay Kunchala</b></p>
+      <p class="muted">© 2026 Safety Pear · Because everyone deserves to feel safe.</p>
+    </div>
+  </footer>
+
+  <!-- Shared keychain drawing -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <linearGradient id="kc-body" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#ffc9cf"/><stop offset="1" stop-color="#ec6f86"/>
+      </linearGradient>
+      <g id="keychain">
+        <circle cx="100" cy="30" r="20" fill="none" stroke="#b9b2c2" stroke-width="7"/>
+        <rect x="94" y="46" width="12" height="18" rx="4" fill="#9d95a8"/>
+        <path d="M100 60c-19 0-28 15-28 34 0 13-28 28-28 63 0 34 25 60 56 60s56-26 56-60c0-35-28-50-28-63 0-19-9-34-28-34z" fill="url(#kc-body)"/>
+        <ellipse cx="76" cy="150" rx="9" ry="22" fill="#fff" opacity=".3"/>
+        <circle class="kc-led" cx="100" cy="112" r="6" fill="#7ee2a8"/>
+        <circle cx="100" cy="170" r="30" fill="#c2335a"/>
+        <circle cx="100" cy="166" r="26" fill="#e0436a"/>
+      </g>
+    </defs>
+  </svg>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
